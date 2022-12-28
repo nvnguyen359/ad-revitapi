@@ -1,0 +1,6 @@
+E:\WPF\ad-revitapi\AD\AD.Core\obj\Debug\AD.Core.csproj.AssemblyReference.cache
+E:\WPF\ad-revitapi\AD\AD.Core\obj\Debug\AD.Core.csproj.CoreCompileInputs.cache
+E:\WPF\ad-revitapi\AD\AD.Core\bin\Debug\AD.Core.dll
+E:\WPF\ad-revitapi\AD\AD.Core\bin\Debug\AD.Core.pdb
+E:\WPF\ad-revitapi\AD\AD.Core\obj\Debug\AD.Core.dll
+E:\WPF\ad-revitapi\AD\AD.Core\obj\Debug\AD.Core.pdb

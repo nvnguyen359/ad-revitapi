@@ -1,0 +1,13 @@
+E:\WPF\ad-revitapi\AD\AD\obj\Debug\AD.csproj.AssemblyReference.cache
+E:\WPF\ad-revitapi\AD\AD\obj\Debug\AD.csproj.CoreCompileInputs.cache
+E:\WPF\ad-revitapi\AD\AD\bin\Debug\AD.dll
+E:\WPF\ad-revitapi\AD\AD\bin\Debug\AD.pdb
+E:\WPF\ad-revitapi\AD\AD\bin\Debug\AD.Core.dll
+E:\WPF\ad-revitapi\AD\AD\bin\Debug\AD.Res.dll
+E:\WPF\ad-revitapi\AD\AD\bin\Debug\UI.dll
+E:\WPF\ad-revitapi\AD\AD\bin\Debug\AD.Core.pdb
+E:\WPF\ad-revitapi\AD\AD\bin\Debug\AD.Res.pdb
+E:\WPF\ad-revitapi\AD\AD\bin\Debug\UI.pdb
+E:\WPF\ad-revitapi\AD\AD\obj\Debug\AD.csproj.CopyComplete
+E:\WPF\ad-revitapi\AD\AD\obj\Debug\AD.dll
+E:\WPF\ad-revitapi\AD\AD\obj\Debug\AD.pdb

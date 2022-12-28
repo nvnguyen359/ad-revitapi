@@ -1,0 +1,6 @@
+E:\WPF\ad-revitapi\AD\UI\bin\Debug\UI.dll
+E:\WPF\ad-revitapi\AD\UI\bin\Debug\UI.pdb
+E:\WPF\ad-revitapi\AD\UI\obj\Debug\AD.Ui.csproj.AssemblyReference.cache
+E:\WPF\ad-revitapi\AD\UI\obj\Debug\AD.Ui.csproj.CoreCompileInputs.cache
+E:\WPF\ad-revitapi\AD\UI\obj\Debug\UI.dll
+E:\WPF\ad-revitapi\AD\UI\obj\Debug\UI.pdb

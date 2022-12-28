@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>Main</Name>
+		<Assembly>AD.dll</Assembly>
+		<AddInId>A816F98F-7932-4875-939D-E07CC35029D3</AddInId>
+		<FullClassName>AD.Main</FullClassName>
+		<VendorId>nvnguyen2504@gmail.com</VendorId>
+		<Publisher>Nguyen Van NGuyen</Publisher>
+		<VendorDescription>Circlesend description, populate later,...</VendorDescription>
+	</AddIn>
+</RevitAddIns>
