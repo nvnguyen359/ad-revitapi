@@ -1,4 +1,6 @@
-﻿using System.Windows.Media.Imaging;
+﻿using System;
+using System.Windows.Media.Imaging;
+
 namespace AD.Res
 {
     public static class ResourceImage
@@ -12,16 +14,17 @@ namespace AD.Res
         public static BitmapImage GetIcon(string name)
         {
             // Create the resource reader stream.
-            var pt = $"{ResourceAssembly.GetNamespace}Images.Icons.{name}";
-            var stream = ResourceAssembly.GetAssembly.GetManifestResourceStream(pt);
+            var pt = $"E:/WPF/ad-revitapi/AD/{ResourceAssembly.GetNamespace}/Images/{name}";
+            var stream = ResourceAssembly.GetAssembly1().GetManifestResourceStream(@"E:\\WPF\\ad-revitapi\\AD\\AD.Res\\Images\\tag.png");
 
             var image = new BitmapImage();
 
             // Construct and return image.
-            image.BeginInit();
-            image.StreamSource = stream;
-            image.EndInit();
 
+            Uri uri = new Uri(pt, UriKind.Absolute);
+            image.BeginInit();
+            image.UriSource = uri;
+            image.EndInit();
             // Return constructed BitmapImage.
             return image;
         }

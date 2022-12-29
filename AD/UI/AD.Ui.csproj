@@ -31,6 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="RevitAPI">
+      <HintPath>D:\Revit 2019 SDK\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>D:\Revit 2019 SDK\RevitAPIUI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,11 +50,23 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Revit\RevitPushButton.cs" />
+    <Compile Include="Revit\RevitPushButtonDataModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
     <Folder Include="Pages\" />
     <Folder Include="Styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AD.Core\AD.Core.csproj">
+      <Project>{c579ede5-95e8-42e1-9aeb-6937273261f2}</Project>
+      <Name>AD.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AD.Res\AD.Res.csproj">
+      <Project>{cfa2c446-8318-4f7e-93b8-c77996b8737c}</Project>
+      <Name>AD.Res</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

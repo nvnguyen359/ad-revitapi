@@ -2,7 +2,7 @@
 
 namespace AD.Res
 {
-    public class ResourceAssembly
+    public static class ResourceAssembly
     {
         /**
          <summary>
@@ -10,10 +10,15 @@ namespace AD.Res
         </summary>
          */
         public static Assembly GetAssembly => Assembly.GetExecutingAssembly();
+        public static Assembly GetAssembly1() { return Assembly.GetCallingAssembly(); }
         /// <summary>
         /// Gets the namespace of the currently running resource assembly.
         /// </summary>
         /// <returns></returns>
-        public static string GetNamespace => $"{typeof(ResourceAssembly).Namespace}.";
+        public static string GetNamespace => $"{typeof(ResourceAssembly).Namespace}";
+        public static string GetNamespace1()
+        {
+            return typeof(ResourceAssembly).Namespace + ".";
+        }
     }
 }

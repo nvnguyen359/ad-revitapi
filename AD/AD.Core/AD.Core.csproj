@@ -50,6 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Commands\AnnotatePanel\TagWallLayers.cs" />
+    <Compile Include="Helpers\CoreAssembly.cs" />
+    <Compile Include="Helpers\DialogBox.cs" />
     <Compile Include="Helpers\Path\PathHelpers.cs" />
     <Compile Include="Helpers\Type\ItemTypeHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,8 +62,8 @@
     <Compile Include="Types\WindowType.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Commands\" />
     <Folder Include="Models\" />
+    <Folder Include="Revit\" />
     <Folder Include="Utilities\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>

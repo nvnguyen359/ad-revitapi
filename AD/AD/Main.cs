@@ -6,12 +6,14 @@ namespace AD
     {
         public Result OnShutdown(UIControlledApplication application)
         {
-            throw new System.NotImplementedException();
+            return Result.Succeeded;
         }
 
         public Result OnStartup(UIControlledApplication application)
         {
-            throw new System.NotImplementedException();
+            var ui = new SetupInterface();
+            ui.Initialize(application);
+            return Result.Succeeded;
         }
     }
 }
