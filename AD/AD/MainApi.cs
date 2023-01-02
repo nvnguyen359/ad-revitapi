@@ -1,4 +1,5 @@
-﻿using Autodesk.Revit.UI;
+﻿using AD.Res;
+using Autodesk.Revit.UI;
 
 namespace AD
 {
@@ -11,7 +12,8 @@ namespace AD
 
         public Result OnStartup(UIControlledApplication application)
         {
-            var ui = new SetupInterface();
+            var t = ResourceAssembly.GetAssembly;
+            var ui = new SetupApiInterface();
             ui.Initialize(application);
             return Result.Succeeded;
         }

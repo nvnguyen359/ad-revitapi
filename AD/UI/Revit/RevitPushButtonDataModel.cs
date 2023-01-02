@@ -1,6 +1,6 @@
 ﻿using Autodesk.Revit.UI;
 
-namespace AD.Ui
+namespace AD.UI
 {
     public class RevitPushButtonDataModel
     {

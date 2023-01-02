@@ -3,7 +3,7 @@ using AD.Res;
 using Autodesk.Revit.UI;
 using System;
 
-namespace AD.Ui
+namespace AD.UI
 {
     public static class RevitPushButton
     {

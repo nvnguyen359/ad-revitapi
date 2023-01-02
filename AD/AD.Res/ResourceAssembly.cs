@@ -15,7 +15,7 @@ namespace AD.Res
         /// Gets the namespace of the currently running resource assembly.
         /// </summary>
         /// <returns></returns>
-        public static string GetNamespace => $"{typeof(ResourceAssembly).Namespace}";
+        public static string GetNamespace => $"{typeof(ResourceAssembly).Namespace}.";
         public static string GetNamespace1()
         {
             return typeof(ResourceAssembly).Namespace + ".";

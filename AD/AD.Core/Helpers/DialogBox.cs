@@ -19,15 +19,15 @@ namespace AD.Core
             switch (type)
             {
                 case WindowType.Information:
-                    title = "~ INFORMATION ~";
+                    title = "INFORMATION";
                     icon = TaskDialogIcon.TaskDialogIconInformation;
                     break;
                 case WindowType.Warning:
-                    title = "~ WARNING ~";
+                    title = "~ WARNING";
                     icon = TaskDialogIcon.TaskDialogIconWarning;
                     break;
                 case WindowType.Error:
-                    title = "~ ERROR ~";
+                    title = "ERROR";
                     icon = TaskDialogIcon.TaskDialogIconError;
                     break;
                 default:

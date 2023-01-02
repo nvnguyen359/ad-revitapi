@@ -54,7 +54,7 @@
   <ItemGroup>
     <Compile Include="MainApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SetupInterface.cs" />
+    <Compile Include="SetupApiInterface.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ad.addin">

@@ -47,15 +47,31 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourceImage.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Images\icon_HideFamilyManager_32x32.png" />
-    <Content Include="Images\icon_ShowFamilyManager_32x32.png" />
-    <Content Include="Images\icon_TagWallLayers_32x32.png" />
-    <Content Include="Images\tag.png" />
-    <Content Include="Images\tooltip_HideFamilyManager_320x320.png" />
-    <Content Include="Images\tooltip_ShowFamilyManager_320x320.png" />
-    <Content Include="Images\tooltip_TagWallLayers_320x320.png" />
+    <Folder Include="Images\i1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\icon_HideFamilyManager_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\icon_ShowFamilyManager_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\icon_TagWallLayers_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\tag.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\tooltip_HideFamilyManager_320x320.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\tooltip_ShowFamilyManager_320x320.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\tooltip_TagWallLayers_320x320.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
