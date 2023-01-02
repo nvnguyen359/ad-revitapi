@@ -4,11 +4,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:AD.Core.Commands.AnnotatePanel"
-        mc:Ignorable="d" Loaded="Window_Loaded" HorizontalAlignment="Left" VerticalAlignment="Top" Width="221" Height="294">
+        mc:Ignorable="d" Loaded="Window_Loaded" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Height="294" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
     <Window.Resources>
         <SolidColorBrush x:Key="ButtonBackground1" Color="#FFDDDDDD"/>
     </Window.Resources>
-    <Grid>
+    <Grid Height="280" Width="254">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

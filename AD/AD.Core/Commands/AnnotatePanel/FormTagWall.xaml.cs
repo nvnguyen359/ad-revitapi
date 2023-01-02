@@ -48,7 +48,7 @@ namespace AD.Core.Commands.AnnotatePanel
         {
             GetTypeList();
             cbUnitType.ItemsSource = Enum.GetValues(typeof(LengthUnitType));
-            cbUnitType.SelectedIndex = 2;
+            cbUnitType.SelectedIndex = 1;
 
             cbDecimalPlaces.ItemsSource= new List<int>() { 0, 1, 2, 3 };
             cbDecimalPlaces.SelectedIndex = 2;
