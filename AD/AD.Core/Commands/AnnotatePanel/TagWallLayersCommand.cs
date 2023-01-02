@@ -73,7 +73,7 @@ namespace AD.Core
                 }
                 if (userInf.Name)
                 {
-                    var m = material!=null ? $" {material.Name}" : $" <by category>";
+                    var m = material!=null ? $" {TranslateGoogle.TranslateText(material.Name)}" : $" <by category>";
                     meg.Append(m);
                 }
                 //  Convert units to metric.

@@ -6,9 +6,9 @@ using System.Web.Script.Serialization;
 
 namespace AD.Core
 {
-    public class TranslateGoogle
+    public static class TranslateGoogle
     {
-        public string TranslateText(string input, string langOrigin = "us", string langTranslate = "vi")
+        public static string TranslateText(string input, string langOrigin = "us", string langTranslate = "vi")
         {
             string url = $"https://translate.googleapis.com/translate_a/single?client=gtx&sl={langOrigin}&tl={langTranslate}&dt=t&q={Uri.EscapeUriString(input)}";
             HttpClient httpClient = new HttpClient();
