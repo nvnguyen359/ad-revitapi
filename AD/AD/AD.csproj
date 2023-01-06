@@ -70,6 +70,10 @@
       <Project>{cfa2c446-8318-4f7e-93b8-c77996b8737c}</Project>
       <Name>AD.Res</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AD.Views\AD.Views.csproj">
+      <Project>{2A4CBBB2-EEAB-4C21-B762-7EA606549BAF}</Project>
+      <Name>AD.Views</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UI\AD.Ui.csproj">
       <Project>{3431fb21-dc4f-4dd3-8ee3-f6300e01aba2}</Project>
       <Name>AD.Ui</Name>

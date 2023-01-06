@@ -1,4 +1,5 @@
 ﻿using AD.Core;
+using AD.Core.Commands.AnnotatePanel;
 using AD.UI;
 using Autodesk.Revit.UI;
 
@@ -17,7 +18,7 @@ namespace AD
             // Create ribbon tab.
             string tabName = "AD";
             app.CreateRibbonTab(tabName);
-            var annotateCommandsPanel = app.CreateRibbonPanel(tabName, "Lệnh Chú Thích");
+            var annotateCommandsPanel = app.CreateRibbonPanel(tabName, TranslateGoogle.L("Annotation Commands"));
             // Create the ribbon panels.
             var TagWallButtonData = new RevitPushButtonDataModel
             {
@@ -31,6 +32,19 @@ namespace AD
 
             // Create button from provided data.
             var TagWallButton = RevitPushButton.Create(TagWallButtonData);
+            #region manager
+            var annotateShowFamily = app.CreateRibbonPanel(tabName, TranslateGoogle.L("Family"));
+            var familyManagerShowButtonData = new RevitPushButtonDataModel
+            {
+                Label = $"{TranslateGoogle.L("Show Family \n Manager")}",
+                Panel = annotateShowFamily,
+                Tooltip = TranslateGoogle.L("This is some sample tooltip text,\nreplace it with real one latter,..."),
+                CommandNamespacePath = ShowFamily.GetPath,
+                IconImageName = "icon_ShowFamilyManager_32x32.png",
+                TooltipImageName = "tooltip_ShowFamilyManager_320x320.png"
+            };
+            RevitPushButton.Create(familyManagerShowButtonData);
+            #endregion
         }
 
     }

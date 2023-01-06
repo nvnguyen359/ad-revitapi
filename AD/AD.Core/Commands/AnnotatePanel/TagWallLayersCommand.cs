@@ -1,5 +1,4 @@
 ﻿using AD.Core.Commands.AnnotatePanel;
-using AD.Core.Revit;
 using AD.Core.Utility;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
@@ -15,13 +14,13 @@ namespace AD.Core
         Result IExternalCommand.Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
             // Application context.
-            var getDoc = AppContext.GetDocument(commandData);
+            var getDoc = AppContextRevit.GetDocument(commandData);
             var docUi = getDoc.AdUiDoc;
             var doc = docUi.Document;
             // Check if we are in the Project, not in family one
             if (getDoc.AdDocument.IsFamilyDocument)
             {
-                DialogBox.Display("Can't use command in family document", WindowType.Warning);
+                DialogBox.Display(TranslateGoogle.L("Can't use command in family document"), WindowType.Warning);
                 return Result.Cancelled;
             }
             // Get access to current view.
@@ -41,7 +40,7 @@ namespace AD.Core
             }
             if (!canCreateTextNoteInView)
             {
-                DialogBox.Display("Text Note element can't be created in the current view.", WindowType.Error);
+                DialogBox.Display(TranslateGoogle.L("Text Note element can't be created in the current view."), WindowType.Error);
                 return Result.Cancelled;
             }
             // itit form and load data
@@ -52,7 +51,7 @@ namespace AD.Core
             // ask user select one wall
             var obType = ObjectType.Element;
             var selectionFilter = new ADSelectionFilterByCategory("Walls");
-            string status = "Select one base wall.";
+            string status = TranslateGoogle.L("Select one base wall.");
             var selectionReference = getDoc.AdUiDoc.Selection.PickObject(obType, selectionFilter, status);
             var selectionElement = getDoc.AdDocument.GetElement(selectionReference);
             if (selectionElement is Wall wall && wall.IsStackedWall)
@@ -73,7 +72,7 @@ namespace AD.Core
                 }
                 if (userInf.Name)
                 {
-                    var m = material!=null ? $" {TranslateGoogle.TranslateText(material.Name)}" : $" <by category>";
+                    var m = material!=null ? $" {TranslateGoogle.L(material.Name)}" : $" <by category>";
                     meg.Append(m);
                 }
                 //  Convert units to metric.
