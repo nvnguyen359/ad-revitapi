@@ -3,7 +3,7 @@ using AD.Core.Commands.AnnotatePanel;
 using AD.UI;
 using Autodesk.Revit.UI;
 
-namespace AD
+namespace AD.App
 {
     public class SetupApiInterface
     {

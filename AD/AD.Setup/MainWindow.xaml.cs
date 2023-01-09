@@ -1,5 +1,4 @@
-﻿using AD.Core;
-using System.IO;
+﻿using System.IO;
 using System.Windows;
 namespace AD.Setup
 {
@@ -13,7 +12,7 @@ namespace AD.Setup
             InitializeComponent();
             string rootPath = @"C:\ProgramData\Autodesk\Revit\Addins";
             string[] dirs = Directory.GetDirectories(rootPath, "*", SearchOption.TopDirectoryOnly);
-            ADCommon.FilterFolder(@"Autodesk\Revit\Addins", "C:");
+
 
         }
 

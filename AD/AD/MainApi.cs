@@ -1,12 +1,11 @@
-﻿using AD.Core;
-using AD.Res;
+﻿using AD.Res;
 using AD.Views;
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.UI;
 using System;
 using System.IO;
 
-namespace AD
+namespace AD.App
 {
     public class MainApi : IExternalApplication
     {
@@ -33,9 +32,10 @@ namespace AD
             var allFiles = Directory.GetFiles(currentDir, "*.*", SearchOption.AllDirectories);
             //E:\WPF\ad-revitapi\AD\AD\bin\Debug
             //E:\WPF\ad-revitapi\AD\AD.Setup\AD\
-            var destDir = $"{ADCommon.SplitPath(currentDir)[0]}AD\\AD.Setup\\AD";
-            ADCommon.CopyFolder(currentDir, destDir);
+            //  var destDir = $"{ADCommon.SplitPath(currentDir)[0]}AD\\AD.Setup";
+            // ADCommon.CopyFolder(currentDir, destDir);
             // DirectoryCopy(currentDir, destDir);
+
         }
 
         /// <summary>
