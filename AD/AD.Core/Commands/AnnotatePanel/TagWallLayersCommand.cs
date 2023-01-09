@@ -99,7 +99,7 @@ namespace AD.Core
                 {
                     var plane = Plane.CreateByNormalAndOrigin(activeView.ViewDirection, activeView.Origin);
                     activeView.SketchPlane = SketchPlane.Create(doc, plane);
-                    point = docUi.Selection.PickPoint("Pick text note location point");
+                    point = docUi.Selection.PickPoint(TranslateGoogle.L("Pick text note location point"));
                 }
                 else
                 {
